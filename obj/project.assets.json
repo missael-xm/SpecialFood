@@ -1571,19 +1571,19 @@
     ]
   },
   "packageFolders": {
-    "/home/carlos/.nuget/packages/": {}
+    "C:\\Users\\Claudia Llamocca\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/carlos/Documents/USMP/PROGRAMACION/SpecialFood/SpecialFood.csproj",
+      "projectUniqueName": "C:\\Users\\Claudia Llamocca\\ComercioEle\\SpecialFood\\SpecialFood.csproj",
       "projectName": "SpecialFood",
-      "projectPath": "/home/carlos/Documents/USMP/PROGRAMACION/SpecialFood/SpecialFood.csproj",
-      "packagesPath": "/home/carlos/.nuget/packages/",
-      "outputPath": "/home/carlos/Documents/USMP/PROGRAMACION/SpecialFood/obj/",
+      "projectPath": "C:\\Users\\Claudia Llamocca\\ComercioEle\\SpecialFood\\SpecialFood.csproj",
+      "packagesPath": "C:\\Users\\Claudia Llamocca\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Claudia Llamocca\\ComercioEle\\SpecialFood\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/carlos/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Claudia Llamocca\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -1646,7 +1646,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.300/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
       }
     }
   }

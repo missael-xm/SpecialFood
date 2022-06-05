@@ -3,33 +3,65 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - SpecialFood</title>
+   <title>@ViewData["Title"] - SpecialFood</title> 
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/SpecialFood.styles.css" asp-append-version="true" />
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/style.css" />
+
+
+
+     <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="css/style.css" rel="stylesheet">
+
+
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">SpecialFood</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
-                    <partial name="_LoginPartial" />
-                </div>
-            </div>
-        </nav>
+    <header id="header" class="fixed-top">
+        <div class="container d-flex align-items-center">
+            <!--   <h1 class="logo mr-auto"><a asp-controller="Home" asp-action="Index">SpecialFood</a>  -->
+        
+         <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a asp-controller="Home" asp-action="Index">Inicio</a></li>
+          <li><a asp-controller="Home" asp-action="Platos">Nuestros platos</a></li>
+         
+         
+          
+          <li class="drop-down"><a href="#">Nuestras Recetas</a>
+            <ul>
+              <li><a asp-controller="Home" asp-action="Sangrecita">Sangrecita de pollo</a></li>
+              
+              <li><a asp-controller="Home" asp-action="Jugo">Jugo Verde</a></li>
+              <li><a asp-controller="Home" asp-action="Tallarines">Tallarines verdes con hígado de pollo</a></li>
+              <li><a asp-controller="Home" asp-action="Torrejita">Torrejita de vegetales</a></li>
+              <li><a asp-controller="Home" asp-action="Mazamorra">Mazamorra morenita</a></li>
+            </ul>
+          </li>
+          
+          
+        
+          <li><a asp-controller="Correo" asp-action="Contacto">Contáctanos</a></li>
+
+        </ul>
+      </nav><!-- .nav-menu -->
+
+    </div>
+
+
     </header>
     <div class="container">
         <main role="main" class="pb-3">
@@ -39,7 +71,7 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2022 - SpecialFood - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            &copy; 2022 - SpecialFood - <a asp-area="" asp-controller="Home" asp-action="Index">Inicio</a>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

@@ -1,0 +1,115 @@
+ <br><br><br><br><br>
+
+ <style>
+
+.appwhatsapp{
+	position: fixed;
+  right: 26px;
+  bottom: 100px;
+  width: 60px;
+  z-index: 1000;
+}
+
+.appwhatsapp img{
+	width: 180%;
+  height: 200%;
+}
+
+
+ </style>
+ <!--Formulario de contacto-->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contacto</h2>
+          <h3><span>Contáctanos!</span></h3>
+          <p>Nos puede contactar a través de este formulario.</p>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-6">
+            <div class="info-box mb-4">
+              <img src="/images/ubicacion.png" class="img-fluid" alt="" width="100" height="150">
+              <h3>Nuestra Dirección</h3>
+              <p>Av. la Fontana 1250 - La Molina - Lima - Perú</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info-box  mb-4">
+              <img src="/images/correo.png" class="img-fluid" alt="" width="100" height="150">
+              <h3>Nuestro Correo</h3>
+              <p>s@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info-box  mb-4">
+              <img src="/images/cel.png" class="img-fluid" alt="" width="100" height="150">
+              <h3>Número de Contacto</h3>
+              <p>+51 975102720</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="col-lg-6 ">
+                    <iframe class="mb-4 mb-lg-0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d487.6981710973843!2d-76.942161!3d-12.072024!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x393610bdc506718b!2sFacultad%20de%20Ingenier%C3%ADa%20y%20Arquitectura%20-%20USMP!5e0!3m2!1ses!2spe!4v1604551349701!5m2!1ses!2spe" frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe>  
+          </div>
+
+          <div class="col-lg-6">
+            <form form method="post" enctype="multipart/form-data">
+              <div class="row">
+                <div class="col form-group">
+                  <input type="text" name="Nombre" class="form-control" id="Nombre" placeholder="Nombre" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validate"></div>
+                </div>
+                <div class="col form-group">
+                  <input type="email" class="form-control" value="s@gmail.com" name="Correo" id="Correo" data-rule="Correo" data-msg="Please enter a valid email"/>
+                  <div class="validate"></div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                  <input type="text" name="CorreoUsu" class="form-control" id="CorreoUsu" placeholder="Correo electrónico" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validate"></div>
+                </div>
+
+
+
+              <div class="form-group">
+                <input type="text" class="form-control" name="Subject" id="Subject" placeholder="Asunto" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <div class="validate"></div>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="Body" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Mensaje"></textarea>
+                <div class="validate"></div>
+              </div>
+              <div class="mb-3">
+               
+              </div>
+              <button class="btn btn-primary" type="submit">Enviar Mensaje</button>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    
+    <!--Api de Whatsapp-->
+
+    <a class="appwhatsapp" href="https://api.whatsapp.com/send?phone=+51 975102720&amp;text=Hola!&nbsp;me&nbsp;pueden&nbsp;ayudar?">
+     <img src="/images/whatsapp.png" alt="Whatsapp" width="100" height="500">
+    </a>
+<h3 style="color:blue">
+  @ViewBag.Mensaje
+</h3>
+<br>
+<h3 style="color:red">
+  @ViewBag.Error
+</h3>
+
