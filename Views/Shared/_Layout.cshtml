@@ -31,8 +31,7 @@
 </head>
 <body>
     <header id="header" class="fixed-top">
-        <div class="container d-flex align-items-center">
-            <!--   <h1 class="logo mr-auto"><a asp-controller="Home" asp-action="Index">SpecialFood</a>  -->
+        <div >
         
          <nav class="nav-menu d-none d-lg-block">
         <ul>
@@ -56,7 +55,11 @@
         
           <li><a asp-controller="Correo" asp-action="Contacto">Contáctanos</a></li>
 
+              <partial  name="_LoginPartial" />
+
         </ul>
+      
+        
       </nav><!-- .nav-menu -->
 
     </div>
