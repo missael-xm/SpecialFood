@@ -9,4 +9,6 @@ public class ApplicationDbContext : IdentityDbContext
         : base(options)
     {
     }
+    public DbSet<SpecialFood.Models.Producto> DataProductos { get; set; }
+    public DbSet<SpecialFood.Models.Proforma> DataProforma { get; set; }
 }

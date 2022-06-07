@@ -1,0 +1,38 @@
+@model IEnumerable<SpecialFood.Models.Producto>
+@{
+    ViewData["Title"] = "Platos";  
+}
+<body style="background-color: #E6E6FA;">
+<h1 class="text-center">@ViewData["Title"]</h1>
+<br>
+<div class="container">
+    <h1>@ViewData["Message"]</h1>
+
+    <div class="row">
+        <div class="col">
+            <div id="products" class="mb-3">
+                <div class="row">
+                    @foreach (var item in Model) 
+                    {
+                        <div class="col-sm-4">
+                            <div class="card mb-3 border-success">
+                                <div class="card-body">
+                                    <div class="card-img-actions" style="text-align: center;">
+                                        <img class="img-responsive" width="200" height="150" src="/images/@item.ImageName" alt="@item.ImageName"  />
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">@Html.DisplayFor(modelItem => item.Name)</h5>
+                                    <p class="card-text">@Html.DisplayFor(modelItem => item.Descripcion)</p>
+                                    <p class="card-text">@Html.DisplayFor(modelItem => item.Precio)</p>
+                                    <a class="btn btn-primary" asp-action="Agregar" asp-route-id="@item.Id">Agregar</a>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>

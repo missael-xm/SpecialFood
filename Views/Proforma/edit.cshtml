@@ -1,0 +1,19 @@
+@model SpecialFood.Models.Proforma
+
+@{
+    ViewData["Title"] = "Producto del Carrito";
+}
+
+    <h1>Producto</h1>
+    <div class="container">
+            <div class="col-sm-4">
+              <div class="card mb-3">
+                <div class="card-body">
+                  <h5 class="card-title">@Html.DisplayFor(model => model.Producto)</h5>
+                    <label asp-for="@Model.Cantidad" class="control-label"></label>
+                    <input asp-for="@Model.Cantidad" class="form-control" type="number"/>
+                  <a class="btn btn-primary mt-3" asp-action="Update" asp-route-id="@Model.Id">Guardar</a>
+                </div>
+              </div>
+            </div>
+    </div>
