@@ -28,7 +28,7 @@ namespace SpecialFood.Controllers
            
            try{
                 MailMessage correo = new MailMessage();
-                correo.From = new MailAddress("milenios3dinterfaces@gmail.com"); 
+                correo.From = new MailAddress("comercioelectronicousmp@gmail.com"); 
                 correo.To.Add(Correo);
                 correo.Subject = Subject;
                 correo.Body = Body;
@@ -41,8 +41,8 @@ namespace SpecialFood.Controllers
                 smtp.Port = 25;
                 smtp.EnableSsl = true;
                 smtp.UseDefaultCredentials = true;
-                string sCuentaCorreo = "milenios3dinterfaces@gmail.com";
-                string sPasswordCorreo = "milenios12";
+                string sCuentaCorreo = "comercioelectronicousmp@gmail.com";
+                string sPasswordCorreo = "Comercio12!";
                 smtp.Credentials = new System.Net.NetworkCredential(sCuentaCorreo, sPasswordCorreo);
 
                 smtp.Send(correo);
