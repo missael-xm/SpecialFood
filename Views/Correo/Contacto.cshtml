@@ -23,6 +23,7 @@
 
         <div class="section-title">
           <h2>Contacto</h2>
+          
           <h3><span>Contáctanos!</span></h3>
           <p>Nos puede contactar a través de este formulario.</p>
         </div>
@@ -61,37 +62,35 @@
           </div>
 
           <div class="col-lg-6">
-            <form form method="post" enctype="multipart/form-data">
+            <form action="https://formsubmit.co/comercioelectronicousmp@gmail.com" method="POST">
               <div class="row">
                 <div class="col form-group">
                   <input type="text" name="Nombre" class="form-control" id="Nombre" placeholder="Nombre" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                   <div class="validate"></div>
                 </div>
-                <div class="col form-group">
-                  <input type="email" class="form-control" value="comercioelectronicousmp@gmail.com" name="Correo" id="Correo" data-rule="Correo" data-msg="Please enter a valid email"/>
-                  <div class="validate"></div>
-                </div>
-              </div>
+               
 
               <div class="form-group">
-                  <input type="text" name="CorreoUsu" class="form-control" id="CorreoUsu" placeholder="Correo electrónico" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <input type="text" name="Correo" class="form-control" id="Correo" placeholder="Correo electrónico" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                   <div class="validate"></div>
                 </div>
 
 
 
               <div class="form-group">
-                <input type="text" class="form-control" name="Subject" id="Subject" placeholder="Asunto" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <input type="text" class="form-control" name="Asunto" id="Asunto" placeholder="Asunto" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
                 <div class="validate"></div>
               </div>
               <div class="form-group">
-                <textarea class="form-control" name="Body" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Mensaje"></textarea>
+                <textarea class="form-control" name="Mensaje" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Mensaje"></textarea>
                 <div class="validate"></div>
               </div>
               <div class="mb-3">
                
               </div>
               <button class="btn btn-primary" type="submit">Enviar Mensaje</button>
+              <input type="hidden" name="_next" value="https://localhost:7281/Correo/Contacto">
+              <input type="hidden" name="_captcha" value="false">
             </form>
           </div>
 
