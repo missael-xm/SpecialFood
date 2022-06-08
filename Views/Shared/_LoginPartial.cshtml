@@ -2,25 +2,36 @@
 @inject SignInManager<IdentityUser> SignInManager
 @inject UserManager<IdentityUser> UserManager
 
-
+<ul>
+    <li>
+        <form asp-controller="Catalogo" asp-action="Catalogo" class="d-flex">
+            <input class="form-control me-2" type="text" placeholder="Buscar" name="searchString">
+            <button class="btn btn-outline-dark" type="submit" value="Buscar">Buscar</button>
+        </form>
+    </li>
 @if (SignInManager.IsSignedIn(User))
 {
     <li>
-        <a  asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Hello @User.Identity?.Name!</a>
+        <form asp-controller="Proforma" asp-action="Index">
+            <input class="btn button-link text-dark" type="submit" value="Carrito" />
+        </form>
+    </li>
+    <li>
+        <a  class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Hola @User.Identity?.Name!</a>
     </li>
     <li>
         <form  class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
-            <button  type="submit" class="nav-link btn btn-link text-dark">Logout</button>
+            <button  type="submit" class="nav-link btn btn-link text-dark">Cerrar Sesión</button>
         </form>
     </li>
 }
 else
 {
     <li>
-        <a asp-area="Identity" asp-page="/Account/Register">Register</a>
+        <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Register">Registro</a>
     </li>
     <li>
-        <a asp-area="Identity" asp-page="/Account/Login">Login</a>
+        <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Login">Iniciar Sesión</a>
     </li>
 }
-
+</ul>

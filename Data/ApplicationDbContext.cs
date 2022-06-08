@@ -11,4 +11,7 @@ public class ApplicationDbContext : IdentityDbContext
     }
     public DbSet<SpecialFood.Models.Producto> DataProductos { get; set; }
     public DbSet<SpecialFood.Models.Proforma> DataProforma { get; set; }
+    public DbSet<SpecialFood.Models.Pago> DataPago { get; set; }
+    public DbSet<SpecialFood.Models.Pedido> DataPedido { get; set; }
+    public DbSet<SpecialFood.Models.DetallePedido> DataDetallePedido { get; set; }
 }

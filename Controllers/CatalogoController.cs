@@ -36,15 +36,6 @@ namespace SpecialFood.Controllers
             return View(await productos.ToListAsync());
         }
 
-         public async Task<IActionResult> Details(int? id){
-            Producto objProduct = await _context.DataProductos.FindAsync(id);
-            if(objProduct == null){
-                return NotFound();
-            }
-
-            return View(objProduct);
-        }
-
         public async Task<IActionResult> Agregar(int? id){
 
             var userID = _userManager.GetUserName(User);
