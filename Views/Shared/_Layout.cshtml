@@ -55,8 +55,15 @@
         
           <li><a asp-controller="Correo" asp-action="Contacto">Contáctanos</a></li>
 
-              <partial  name="_LoginPartial" />
-
+          <li>
+        <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Register">Registro</a>
+    </li>
+    <li>
+        <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Login">Iniciar Sesión</a>
+    </li>
+           <!-- .nav-menu 
+             <li> <partial  name="_LoginPartial" /></li>
+-->
         </ul>
       
         
